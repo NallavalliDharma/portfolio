@@ -16,17 +16,22 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
-// Mobile Menu Toggle
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('show');
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.remove('show');
-    });
-  });
-}
+// ✅ Mobile Menu Toggle
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
 
-// Resume Print
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Close menu after clicking a link (for mobile UX)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
+// Resume Print (if needed in future)
 function printResume() {
   window.print();
 }
