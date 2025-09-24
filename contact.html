@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="page-section contact-section">
+    <h1>Contact Me</h1>
+    <p class="contact-intro">I’d love to connect with you! Whether it’s for collaboration, projects, or just a chat — feel free to reach me below.</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:nallavallidharma@gmail.com">nallavallidharma@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+919059048341">+91-9059048341</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nallavallidharma/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+
+      <div class="contact-form-container">
+        <h2>Send me a message</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">📨 Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nallavalli Dharma | Designed with ❤️</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

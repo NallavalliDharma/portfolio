@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="page-section">
+    <h1>My Projects</h1>
+
+    <!-- Expense Tracker -->
+    <div class="project fade-in">
+      <h2>1) Expense Tracker</h2>
+      <p>A MERN stack application to manage and analyze personal finances with authentication, reporting, and email features.</p>
+      <p><strong>Frontend:</strong> React.js, HTML, CSS</p>
+      <p><strong>Backend:</strong> Node.js, Express.js, MongoDB, JWT, Nodemailer, Multer</p>
+      <p><strong>Features:</strong> Secure login/signup, expense categorization, export to Excel, email notifications</p>
+      <a href="https://github.com/NallavalliDharma/Expense_Tracker" class="btn" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <!-- NASA APOD -->
+    <div class="project fade-in">
+      <h2>2) NASA APOD Web Application</h2>
+      <p>A responsive web app integrating NASA’s APOD API to display daily space images with detailed information and user dashboard.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Features:</strong> Authentication, favorites dashboard, mobile-friendly UI</p>
+      <a href="https://github.com/NallavalliDharma/Nasa-vistas" class="btn" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Job Portal -->
+    <div class="project fade-in">
+      <h2>3) Job Portal (LLM-powered)</h2>
+      <p>A job portal leveraging LLMs to match candidates with jobs based on skills analysis.</p>
+      <p><strong>Features:</strong> Job listings, search & filters, resume upload, skills extraction with LLM, match percentage calculation</p>
+      <a href="https://github.com/NallavalliDharma/job-portals" class="btn" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Patient Reminder -->
+    <div class="project fade-in">
+      <h2>4) Serverless Patient Reminder System</h2>
+      <p>A serverless healthcare solution sending appointment reminders via email and SMS using AWS services.</p>
+      <p><strong>Frontend:</strong> HTML, CSS</p>
+      <p><strong>Backend:</strong> AWS S3, API Gateway, Lambda, Step Functions, SES, SNS</p>
+      <a href="https://github.com/NallavalliDharma/patient-reminder-app" class="btn" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Job Scraping -->
+    <div class="project fade-in">
+      <h2>5) Job Scraping Automation</h2>
+      <p>A Python-based automation script that scrapes job/internship listings from LinkedIn and filters them for efficient job tracking.</p>
+      <p><strong>Tech Stack:</strong> Python, Pandas, Ubuntu</p>
+      <p><strong>Features:</strong> Automated daily email alerts, cron job scheduling, server deployment</p>
+      <a href="https://github.com/NallavalliDharma/python-project" class="btn" target="_blank">🔗 View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nallavalli Dharma | Designed with ❤️</p>
+  </footer>
+
+  <!-- Scroll animation script -->
+  <script>
+    const projects = document.querySelectorAll('.fade-in');
+
+    function revealOnScroll() {
+      projects.forEach((project) => {
+        const rect = project.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          project.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Run on page load
+  </script>
+</body>
+</html>
